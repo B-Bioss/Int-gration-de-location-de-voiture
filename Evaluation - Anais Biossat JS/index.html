@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <title>#2 Evaluation Anais Biossat</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Lien typo-->
+        <!--Metre les lien ici-->
+        <!--Lien Fichier CSS-->
+        <link rel="stylesheet" type="text/css" href="assets/CSS/styles.css">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  
+    </head>
+    <body>
+<!----------------------------------CORPS DU TEXTE---------------------------------------->
+<!---------------------------------------------------------------------------------------->
+<!--------------------------------------HEADER-------------------------------------------->
+<header class="masthead" style="background-image: url('./assets/Images/background.jpg')">
+
+<!--NavBar haut de page-->
+<nav class="navbar navbar-light justify-content-end">
+    <button class="navbar-toggler border-white align-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-list text-white" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+        </svg>
+    </button>
+    <div class="collapse navbar-collapse p-3 mb-2 bg-white text-dark" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Louer une voiture</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Reserver un chauffeur</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Découvrez nos agences</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Mon compte</a>
+          </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+
+<!--Texte millieu de page-->
+        <h1 class="text-center text-white mt-5">Bienvenue à bord</h1>
+        <p class="text-center text-white mb-5">Location de voiture 24h/24 et 7j/7</p>
+         <div class="m-5 p-5"></div>
+<!--Nav bas de header-->
+<div class="container mt-5 d-flex align-items-end">
+    <div class="row mt-5">
+        <div class="bg-light row btn-group my-5 shadow" role="group" aria-label="Basic example">
+            <!--1er Bouton Adresse de départ-->
+            <div class="bg-light col-12 col-md-4 col-lg-3 mx-auto" >
+                <button type="button" class="col-12 lg-col-3 btn btn-light mx-auto">
+                    <div class="form-group">
+                        <select class="form-control mx-auto" id="exampleFormControlSelect1">
+                          <option>Adresse de départ</option>
+                          <option>2</option>
+                        </select>
+                      </div>
+                </button>
+            </div>
+            <!--2eme Bouton Debut de loc-->
+            <div class="bg-light col-12 col-md-4 col-lg-3 mx-auto" >
+                <button type="button" class="col-12 lg-col-3 btn btn-light px-5 mx-auto">
+                    <input type="date" id="start" name="trip-start" value="Debut de location" min="01-01-2020" max="31-12-2031">
+                </button>
+            </div>
+            <!--3eme Bouton Fin de loc-->
+            <div class="bg-light col-12 col-md-4 col-lg-3 mx-auto" >
+                <button type="button" class="col-12 lg-col-3 btn btn-light px-5 mx-auto">
+                    <input type="date" id="start" name="trip-start" value="Fin de location" min="01-01-2020" max="31-12-2031">
+                </button>
+            </div>
+            
+            <!--4eme Bouton Valider-->
+            <div class="col-12 col-md-12 col-lg-3 bg-success mx-auto mx-auto text-align-center" >
+                <button type="button" class="btn btn-success px-5">Valider ma recherche</button>
+            </div>
+        </div> 
+    </div>
+</div>
+</header>
+
+
+<!----------------------------------------MAIN-------------------------------------------->
+<main>
+<div class="container">
+    <div class="row">
+        <!--Premier element du main: Nombre de resultat et Ordre d'affichage-->
+        <div class="col mb-3 pt-4">
+            <h4><strong>7</strong> résultas</h4>
+        </div>
+        <div class="col float-right mb-3 pt-4">
+            <div class="btn-group float-right" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn btn-light dropdown-toggle shadow" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Prix croissant
+                </button>
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                  <a class="dropdown-item" href="#">Prix croissant</a>
+                  <a class="dropdown-item" href="#">Prix décroissant</a>
+                </div>
+              </div>
+        </div>
+
+        <!--Les Different Proposition de voiture-->
+            <!--Article 1-->
+            <div class="row border-bottom mx-auto py-5 post-preview">
+                <div class="col">
+                    <!--Petit carousel-->
+                    <div class="row">
+                        <!-- Flèche de gauche (reculer) -->
+                        <div class="col-1 my-auto">
+                            <svg id="reculer" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M10 12.796L4.519 8 10 3.204v9.592zm-.659.753l-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
+                            </svg>
+                        </div>
+
+                        <!-- Slide -->
+                        <div id="content" class="col-10">
+                            <img src="assets/Images/vehicule1.png" alt="Peugeot 208" class="img-fluid">
+                        </div> 
+
+                        <!-- Flèche de droite (avancer) -->
+                        <div class="col-1 my-auto">
+                            <svg id="avancer" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M6 12.796L11.481 8 6 3.204v9.592zm.659.753l5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <!--Description-->
+                    <h3 class="d-none d-lg-block">Peugeot 208</h3>
+                    <p class="d-none d-lg-block">Disel 5 portes, GPS, Autoradio, FForfait 1000 km(0.5/km supplémentaire).<br>999€ - Agence de Paris</p>
+                    <button type="button" class="btn btn-success shadow">Reserver et Payer</button>
+                </div>
+            </div>
+        
+
+             <!--Article 2-->
+             <div class="row border-bottom mx-auto py-5 post-preview">
+                <div class="col">
+                    <!--Petit carousel-->
+                    <div class="row">
+                        <!-- Flèche de gauche (reculer) -->
+                        <div class="col-1 my-auto">
+                            <svg id="reculer" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M10 12.796L4.519 8 10 3.204v9.592zm-.659.753l-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
+                            </svg>
+                        </div>
+
+                        <!-- Slide -->
+                        <div id="content" class="col-10">
+                            <img src="assets/Images/vehicule2.png" alt="Ford Focus" class="img-fluid">
+                        </div> 
+
+                        <!-- Flèche de droite (avancer) -->
+                        <div class="col-1 my-auto">
+                            <svg id="avancer" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M6 12.796L11.481 8 6 3.204v9.592zm.659.753l5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <!--Description-->
+                    <h3 class="d-none d-lg-block">Ford Focus</h3>
+                    <p class="d-none d-lg-block">Disel 5 portes, GPS, Autoradio, FForfait 1000 km(0.5/km supplémentaire).<br>999€ - Agence de Paris</p>
+                    <button type="button" class="btn btn-success shadow">Reserver et Payer</button>
+                </div>
+             </div>
+             
+
+             <!--Article 3-->
+             <div class="row border-bottom mx-auto py-5 post-preview">
+                <div class="col">
+                    <!--Petit carousel-->
+                    <div class="row">
+                        <!-- Flèche de gauche (reculer) -->
+                        <div class="col-1 my-auto">
+                            <svg id="reculer" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M10 12.796L4.519 8 10 3.204v9.592zm-.659.753l-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
+                            </svg>
+                        </div>
+
+                        <!-- Slide -->
+                        <div id="content" class="col-10">
+                            <img src="assets/Images/vehicule3.png" alt="Audi A1" class="img-fluid">
+                        </div> 
+
+                        <!-- Flèche de droite (avancer) -->
+                        <div class="col-1 my-auto">
+                            <svg id="avancer" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M6 12.796L11.481 8 6 3.204v9.592zm.659.753l5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <!--Description-->
+                    <h3 class="d-none d-lg-block">Audi A1</h3>
+                    <p class="d-none d-lg-block">Disel 5 portes, GPS, Autoradio, FForfait 1000 km(0.5/km supplémentaire).<br>1100€ - Agence de Paris</p>
+                    <button type="button" class="btn btn-success shadow">Reserver et Payer</button>
+                </div>
+             </div>
+             
+
+             <!--Article 4-->
+             <div class="row border-bottom mx-auto py-5 post-preview">
+                <div class="col">
+                    <!--Petit carousel-->
+                    <div class="row">
+                        <!-- Flèche de gauche (reculer) -->
+                        <div class="col-1 my-auto">
+                            <svg id="reculer" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M10 12.796L4.519 8 10 3.204v9.592zm-.659.753l-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
+                            </svg>
+                        </div>
+
+                        <!-- Slide -->
+                        <div id="content" class="col-10">
+                            <img src="assets/Images/vehicule4.png" alt="Opel Mokka" class="img-fluid">
+                        </div> 
+
+                        <!-- Flèche de droite (avancer) -->
+                        <div class="col-1 my-auto">
+                            <svg id="avancer" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M6 12.796L11.481 8 6 3.204v9.592zm.659.753l5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <!--Description-->
+                    <h3 class="d-none d-lg-block">Opel Mokka</h3>
+                    <p class="d-none d-lg-block">Disel 5 portes, GPS, Autoradio, FForfait 1000 km(0.5/km supplémentaire).<br>1150€ - Agence de Paris</p>
+                    <button type="button" class="btn btn-success shadow">Reserver et Payer</button>
+                </div>
+             </div>
+                
+
+
+        </div>
+</div>
+</main>
+
+
+<!--------------------------------------FOOTER-------------------------------------------->
+<footer>
+<div class="container">
+    <div class="row p-5">
+        <div class="col-6">
+            <img class="w-25 float-right" src="../Evaluation - Anais Biossat JS/assets/Images/agence.jpg" alt="Photo de l'agence">
+        </div>
+        <div class="col-6">
+            <p class="text-muted font-weight-lighter">Notre Agence de Paris <br>300 Boulvard de vaugirard, 75000, Paris<br>Ouvert 7j/7 et 9h à 13h et de 14h à 20h<br>01 49 78 21 33<br>contact@vtc.com</p>
+        </div>
+    </div>
+</div>
+</footer>
+
+
+<!--------------------------------------------------------------------------------------->
+<!--------------------------------------LIENS-------------------------------------------->
+        <!--Lien jquery-->
+        <script   src="https://code.jquery.com/jquery-3.5.1.min.js"   integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="   crossorigin="anonymous"></script>
+         <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <!-- Jeu JS -->
+        <script src="assets/js/scripts.js"></script>
+    </body>
