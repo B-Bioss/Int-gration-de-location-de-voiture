@@ -8,4 +8,4 @@ Voici l'intégration réaliser lors d'un exercice réaliser lors de ma formation
 
 ### Screen de la page : 
 
-(https://raw.githubusercontent.com/B-Bioss/Integration-de-location-de-voiture/main/Evaluation%20-%20Anais%20Biossat%20JS/assets/Images/graphisme.png "Screen")
+![Screenshot - Location voiture](https://raw.githubusercontent.com/B-Bioss/Integration-de-location-de-voiture/main/Evaluation%20-%20Anais%20Biossat%20JS/assets/Images/graphisme.png "Screen")
